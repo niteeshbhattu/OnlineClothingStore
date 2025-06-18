@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNS - The Online Clothing Store</title>
+    <meta name="description" content="DNS - The Online Clothing Store. Shop the latest fashion trends." />
+    <meta name="author" content="DNS" />
+
+    <meta property="og:title" content="DNS - The Online Clothing Store" />
+    <meta property="og:description" content="Shop the latest fashion trends at DNS." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:image" content="" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="./index.html" class="logo">DNS</a>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="./product.html">Products</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li>
+                <a href="./cart.html" class="cart-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                  <span class="cart-count">0</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text animate-fade-in">
+            <h1>Discover Your Style at <span class="text-primary">DNS</span></h1>
+            <p>Shop the latest trends in fashion with our collection of high-quality clothing and accessories.</p>
+            <div class="hero-buttons">
+              <a href="./product.html" class="btn btn-primary">Shop Now</a>
+              <a href="./contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="./assets/profile.jpg" alt="DNS Fashion">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid" id="featured-products">
+          <!-- Products will be loaded dynamically via JavaScript -->
+        </div>
+        <div class="text-center">
+          <a href="./product.html" class="btn btn-outline">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid" id="category-grid">
+          <!-- Categories will be loaded dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Join Our Newsletter</h2>
+        <p>Subscribe to receive updates on new arrivals, special offers, and other discount information.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>DNS Store</h3>
+            <p>Your one-stop shop for the latest fashion trends at affordable prices.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./product.html">Products</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <address>
+              <p>Pokhara, Nepal</p>
+              <p>Street no. 17, Gharipatan</p>
+              <p>Phone: 994630000</p>
+              <p>Email: info@dnsstore.com</p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DNS Store. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="./product.js"></script>
+    <script src="./cart.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
